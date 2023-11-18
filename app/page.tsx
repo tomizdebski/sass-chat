@@ -1,9 +1,22 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Chat SAAS</h1>
+      <div className="relative isolate pt-14 dark:bg-gray-900">
+        <div
+          className="absolute inset-x-0 top-28 -z-10 transform-gpu overflow-hidden blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="relative left-[calc(50%-11rem)] top-[-2rem] w-[calc(100vw+2rem)] h-[calc(100vw+2rem)] bg-gradient-to-br from-[#f9a8d4] to-[#9089fc] rounded-[50%])]"
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 0 80%, 32% 72.5%, 60% 62%, 52% 68%)",
+            }}
+          />
+        </div>
+      </div>
     </main>
-  )
+  );
 }

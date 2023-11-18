@@ -8,7 +8,7 @@ function CreateChatButton() {
     const router = useRouter();
 
     const createNewChat = async () => {
-
+            router.push(`/chat/abc`)
     }
 
   return (
