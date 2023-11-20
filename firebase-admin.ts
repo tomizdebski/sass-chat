@@ -21,6 +21,6 @@ const adminDb = initFirestore({
       }),
 });
 
-const adminauth = admin.auth(app);
+const adminAuth = admin.auth(app);
 
-export { adminDb, adminauth};
+export { adminDb, adminAuth};

@@ -1,7 +1,11 @@
+import { authOptions } from "@/auth";
+import { getServerSession } from "next-auth";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+  console.log('session',session?.user.id);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative isolate pt-14 dark:bg-gray-900">
